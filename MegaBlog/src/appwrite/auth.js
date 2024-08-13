@@ -1,5 +1,5 @@
 /* eslint-disable no-useless-catch */
-import config from "../configig/configig";
+import config from "../config/config";
 import { Client, Account, ID } from "appwrite";
 
 
