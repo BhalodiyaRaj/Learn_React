@@ -4,6 +4,7 @@ import { Button, Input, RTE, Select } from "..";
 import appwriteService from "../../appwrite/config";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
+import PropTypes from "prop-types";
 
 export default function PostForm({ post }) {
   const { register, handleSubmit, watch, setValue, control, getValues } =
@@ -137,3 +138,7 @@ export default function PostForm({ post }) {
     </form>
   );
 }
+
+PostForm.propTypes = {
+  post: PropTypes.object,
+};

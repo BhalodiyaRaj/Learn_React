@@ -1,5 +1,6 @@
 import { Editor } from "@tinymce/tinymce-react";
 import { Controller } from "react-hook-form";
+import PropTypes from "prop-types";
 
 export default function RTE({ name, control, label, defaultValue = "" }) {
   return (
@@ -50,3 +51,10 @@ export default function RTE({ name, control, label, defaultValue = "" }) {
     </div>
   );
 }
+
+RTE.propTypes = {
+  name: PropTypes.string,
+  control: PropTypes.object,
+  label: PropTypes.string,
+  defaultValue: PropTypes.string,
+};
